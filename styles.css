@@ -198,3 +198,44 @@ section {
 .tretto {
   background-image: url(./assets/images/portfolio5.png);
 }
+
+/* ! More Section */
+
+.more {
+  background-color: var(--color-text-black);
+  color: var(--color-text-white);
+  display: flex;
+  flex-direction: column;
+  padding-top: 8.125rem;
+  padding-bottom: 6.25rem;
+}
+
+.more h2 {
+  text-transform: lowercase;
+  font-size: 11.25rem;
+  align-self: center;
+  margin-bottom: 9.375rem;
+}
+
+.more h2::first-letter {
+  text-transform: uppercase;
+}
+
+.more div {
+  margin-left: 45vw;
+  margin-right: 8vw;
+}
+
+.more p {
+  color: var(--color-text-grey);
+  font-size: 1.375rem;
+  font-weight: 200;
+  line-height: 1.8;
+  margin-bottom: 4.375rem;
+}
+
+.more a {
+  all: unset;
+  cursor: pointer;
+  font-size: 3.75rem;
+}
