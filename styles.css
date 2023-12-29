@@ -97,6 +97,7 @@ section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  /* background-attachment: fixed; */
 }
 
 .dark {
@@ -190,7 +191,6 @@ section {
 
 .dive-in-light:hover {
   background-color: var(--color-text-black);
-  color: var(--color-text-white);
 }
 
 /* ! Orbis Section */
@@ -263,6 +263,9 @@ section {
 footer {
   padding-top: 14.375rem;
   padding-bottom: 8.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer ul {
@@ -287,8 +290,7 @@ footer a {
   color: var(--color-text-black);
 }
 
-footer p {
-  text-align: center;
+footer span {
   animation-name: pumpingHeart;
   animation-duration: 2s;
   animation-timing-function: linear;
