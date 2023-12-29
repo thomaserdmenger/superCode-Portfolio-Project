@@ -20,8 +20,50 @@
   --color-text-darkgray: #666;
 }
 
+/* ! Basic Settings */
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+h1,
+h2 {
+  font-family: Didact;
+}
+
+p {
+  font-family: WorkSans;
+  font-size: 1.25rem;
+}
+
+/* ! Header */
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header p:nth-of-type(1) {
+  margin: 1.25rem 0 3.75rem 0;
+}
+
+h1 {
+  font-size: 6.25rem;
+  width: 500px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 3.75rem;
+}
+
+header img {
+  margin-bottom: 7.5rem;
+}
+
+header p:nth-of-type(2) {
+  font-size: 10rem;
+  margin-bottom: 9.375rem;
 }
