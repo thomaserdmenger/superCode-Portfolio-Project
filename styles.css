@@ -152,6 +152,7 @@ section {
   font-family: Fjalla;
   text-align: right;
   margin-right: 8vw;
+  transition: 1s;
 }
 
 .dive-in-dark,
@@ -173,6 +174,16 @@ section {
   color: var(--color-text-black);
 }
 
+.dive-in-dark:hover + .side-number {
+  color: var(--color-text-white);
+  opacity: 1;
+}
+
+.dive-in-light:hover + .side-number {
+  color: var(--color-text-black);
+  opacity: 1;
+}
+
 .dive-in-light {
   border: 1px solid var(--color-text-black);
 }
@@ -180,11 +191,6 @@ section {
 .dive-in-light:hover {
   background-color: var(--color-text-black);
   color: var(--color-text-white);
-}
-
-.side-number-hover {
-  color: var(--color-text-white);
-  opacity: 1;
 }
 
 /* ! Orbis Section */
