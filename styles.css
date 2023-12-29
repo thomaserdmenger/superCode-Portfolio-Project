@@ -45,26 +45,6 @@ p {
   font-size: 1.25rem;
 }
 
-.dive-in {
-  all: unset;
-  font-family: Fjalla;
-  border: 1px solid var(--color-text-white);
-  padding: 1rem 1.625rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.dive-in:hover {
-  background-color: var(--color-text-white);
-  color: var(--color-text-black);
-}
-
-.side-number-hover {
-  color: var(--color-text-white);
-  opacity: 1;
-}
-
 img {
   max-width: 100%;
 }
@@ -99,30 +79,42 @@ header p:nth-of-type(2) {
   margin-bottom: 9.375rem;
 }
 
-/* ! Orbis Section */
+/* ! Basic Section Settings */
 
-.dark {
-  padding-top: 9.375rem;
-  padding-bottom: 6.25rem;
-  position: relative;
-  color: var(--color-text-white);
-}
-
-.orbis {
-  background-image: url(./assets/images/portfolio2.jpg);
+section {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.content-container {
-  margin-left: 10vw;
+.dark {
+  padding-top: 9.375rem;
+  padding-bottom: 6.25rem;
+  color: var(--color-text-white);
 }
 
-.line {
-  border: 1px solid var(--color-text-white);
+.light {
+  padding-top: 15.625rem;
+  padding-bottom: 14.375rem;
+  color: var(--color-text-black);
+}
+
+.content-container {
+  margin-left: 15vw;
+}
+
+.line-dark,
+.line-white {
   width: 15px;
   height: 1px;
+}
+
+.line-white {
+  border: 0.5px solid var(--color-text-white);
+}
+
+.line-dark {
+  border: 0.5px solid var(--color-text-black);
 }
 
 .year-container {
@@ -148,4 +140,49 @@ header p:nth-of-type(2) {
   font-family: Fjalla;
   text-align: right;
   margin-right: 8vw;
+}
+
+.dive-in-dark,
+.dive-in-light {
+  all: unset;
+  font-family: Fjalla;
+  padding: 1rem 1.625rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.dive-in-dark {
+  border: 1px solid var(--color-text-white);
+}
+
+.dive-in-dark:hover {
+  background-color: var(--color-text-white);
+  color: var(--color-text-black);
+}
+
+.dive-in-light {
+  border: 1px solid var(--color-text-black);
+}
+
+.dive-in-light:hover {
+  background-color: var(--color-text-black);
+  color: var(--color-text-white);
+}
+
+.side-number-hover {
+  color: var(--color-text-white);
+  opacity: 1;
+}
+
+/* ! Orbis Section */
+
+.orbis {
+  background-image: url(./assets/images/portfolio2.jpg);
+}
+
+/* ! Rollr Section */
+
+.rollr {
+  background-image: url(./assets/images/portfolio3.png);
 }
