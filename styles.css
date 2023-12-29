@@ -101,18 +101,18 @@ header p:nth-of-type(2) {
 
 /* ! Orbis Section */
 
-section {
+.dark {
+  padding-top: 9.375rem;
+  padding-bottom: 6.25rem;
+  position: relative;
+  color: var(--color-text-white);
+}
+
+.orbis {
   background-image: url(./assets/images/portfolio2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 9.375rem;
-  padding-bottom: 6.25rem;
-  position: relative;
-}
-
-.dark {
-  color: var(--color-text-white);
 }
 
 .content-container {
