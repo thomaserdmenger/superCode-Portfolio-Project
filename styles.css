@@ -1,3 +1,15 @@
+@keyframes pumpingHeart {
+  0% {
+    transform: scale(1.6);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.6);
+  }
+}
+
 @font-face {
   font-family: Didact;
   src: url(./assets/fonts/DidactGothic-Regular.ttf);
@@ -238,4 +250,41 @@ section {
   all: unset;
   cursor: pointer;
   font-size: 3.75rem;
+}
+
+/* ! Footer */
+
+footer {
+  padding-top: 14.375rem;
+  padding-bottom: 8.125rem;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 13.75rem;
+}
+
+footer li {
+  margin-bottom: 9.375rem;
+}
+
+footer li:last-of-type {
+  margin-bottom: 0;
+}
+
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  font-family: Didact;
+  font-size: 10rem;
+  color: var(--color-text-black);
+}
+
+footer p {
+  text-align: center;
+  animation-name: pumpingHeart;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
